@@ -98,5 +98,5 @@ Not applicable — this was a single-user binary analysis challenge, no privileg
 
 ## 📚 Resources
 
-- [`strings` command](https://man7.org/linux/man-pages/man1/strings.1.html)
+- [strings command](https://man7.org/linux/man-pages/man1/strings.1.html)
 - [TryHackMe](https://tryhackme.com)
