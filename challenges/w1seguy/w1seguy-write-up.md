@@ -1,4 +1,4 @@
-# TryHackMe – [Room Name]
+# TryHackMe – W1seGuy Write-Up
 
 > 🚫 This write-up follows TryHackMe’s guidelines. No flags, credentials, or direct answers are shared.
 
