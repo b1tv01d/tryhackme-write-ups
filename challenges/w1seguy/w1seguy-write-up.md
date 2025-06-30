@@ -134,6 +134,10 @@ A notable tool to use in this case is [CyberChef](https://gchq.github.io/CyberCh
 
 Given that most flags in TryHackMe start with THM{, we can get those first 4 bytes using CyberChef conversion.
 
+I took the first 4 bytes of the given encoded XOR (19097d11) and put them into the 'Key' field. I then wrote "THM{" in the input box.
+
+> Please note that these screenshots were pulled from another source.
+
 ![Cyber Chef Conversion](https://miro.medium.com/v2/resize:fit:720/format:webp/1*rm3gSM-nbghhKSz6TuYm_g.png)
 
 Next, we will use the “From Hex and XOR operation” in CyberChef, incorporating the output key.
