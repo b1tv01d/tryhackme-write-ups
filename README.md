@@ -14,5 +14,6 @@ TryHackMe is a hands-on learning platform designed to broaden the knowledge and 
 
 ### Challenges
 - [The Game](https://github.com/b1tv01d/tryhackme-write-ups/blob/main/challenges/the_game/the_game_writeup.md)
+- [W1seGuy](https://github.com/b1tv01d/tryhackme-write-ups/blob/main/challenges/w1seguy/w1seguy-write-up.md)
 
 ### CTFs
