@@ -1,10 +1,10 @@
-# TryHackMe – The Game
+# TryHackMe – The Game Write-Up
 
 > 🚫 This write-up follows TryHackMe’s guidelines. No flags, credentials, or direct answers are shared.
 
-_A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challenge._
+<br>
 
----
+_A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challenge._
 
 ## 📚 Table of Contents
 - [🧠 Overview](#-overview)
@@ -15,7 +15,7 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 - [🧠 Lessons Learned](#-lessons-learned)
 - [📚 Resources](#-resources)
 
----
+<br>
 
 ## 🧠 Overview
 - **Category:** Reverse Engineering
@@ -23,7 +23,7 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 - **Date Completed:** 2025-06-29
 - **Tools Used:** `strings`, `grep`, `wine`, `file`
 
----
+<br>
 
 ## 📡 Target Information
 
@@ -31,7 +31,7 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 |---------|--------------|
 | Binary  | `Tetrix.exe` |
 
----
+<br>
 
 ## 🛰️ Reconnaissance
 
@@ -48,8 +48,6 @@ Tetrix.exe: PE32+ executable (GUI) x86-64, for MS Windows
 
 The binary is a Windows-based 64-bit executable, likely written in C/C++ and possibly stripped.
 
----
-
 ### 🔎 Strings Analysis
 
 ```bash
@@ -58,13 +56,12 @@ strings Tetrix.exe | grep THM{
 
 This quickly revealed a potential flag-like string embedded directly in the binary. This indicates the flag is not dynamically generated or encoded — just statically stored.
 
----
 
 ### 🚫 Skipped Network/Directory Recon
 
 As this was a standalone reverse engineering challenge with no server or web component, tools like `gobuster` or `nmap` were not necessary.
 
----
+<br>
 
 ## 🛠️ Exploitation
 
@@ -82,13 +79,13 @@ strings Tetrix.exe | grep THM{
 
 This implies the flag was likely embedded for a quick-win beginner-level intro to binary analysis.
 
----
+<br>
 
 ## 🧨 Privilege Escalation
 
 Not applicable — this was a single-user binary analysis challenge, no privilege escalation was involved.
 
----
+<br>
 
 ## 🧠 Lessons Learned
 
@@ -97,9 +94,9 @@ Not applicable — this was a single-user binary analysis challenge, no privileg
 - Even "reverse engineering" challenges can sometimes be solved without reverse engineering 😄
 - CTFs often hide flags in obvious places to build confidence before escalating difficulty.
 
----
+<br>
 
 ## 📚 Resources
 
-- [`strings` command](https://man7.org/linux/man-pages/man1/strings.1.html)
+- [strings command](https://man7.org/linux/man-pages/man1/strings.1.html)
 - [TryHackMe](https://tryhackme.com)

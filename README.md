@@ -13,6 +13,6 @@ TryHackMe is a hands-on learning platform designed to broaden the knowledge and 
 ### Rooms
 
 ### Challenges
-- The Game (Easy)
+- [The Game](https://github.com/b1tv01d/tryhackme-write-ups/blob/main/challenges/the_game/the_game_writeup.md)
 
 ### CTFs
