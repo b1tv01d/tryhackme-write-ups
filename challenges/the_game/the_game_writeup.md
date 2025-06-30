@@ -2,8 +2,9 @@
 
 > 🚫 This write-up follows TryHackMe’s guidelines. No flags, credentials, or direct answers are shared.
 
-_A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challenge._
+<br>
 
+_A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challenge._
 
 ## 📚 Table of Contents
 - [🧠 Overview](#-overview)
@@ -14,6 +15,7 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 - [🧠 Lessons Learned](#-lessons-learned)
 - [📚 Resources](#-resources)
 
+<br>
 
 ## 🧠 Overview
 - **Category:** Reverse Engineering
@@ -21,6 +23,7 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 - **Date Completed:** 2025-06-29
 - **Tools Used:** `strings`, `grep`, `wine`, `file`
 
+<br>
 
 ## 📡 Target Information
 
@@ -28,6 +31,7 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 |---------|--------------|
 | Binary  | `Tetrix.exe` |
 
+<br>
 
 ## 🛰️ Reconnaissance
 
@@ -57,6 +61,7 @@ This quickly revealed a potential flag-like string embedded directly in the bina
 
 As this was a standalone reverse engineering challenge with no server or web component, tools like `gobuster` or `nmap` were not necessary.
 
+<br>
 
 ## 🛠️ Exploitation
 
@@ -74,11 +79,13 @@ strings Tetrix.exe | grep THM{
 
 This implies the flag was likely embedded for a quick-win beginner-level intro to binary analysis.
 
+<br>
 
 ## 🧨 Privilege Escalation
 
 Not applicable — this was a single-user binary analysis challenge, no privilege escalation was involved.
 
+<br>
 
 ## 🧠 Lessons Learned
 
@@ -87,7 +94,7 @@ Not applicable — this was a single-user binary analysis challenge, no privileg
 - Even "reverse engineering" challenges can sometimes be solved without reverse engineering 😄
 - CTFs often hide flags in obvious places to build confidence before escalating difficulty.
 
----
+<br>
 
 ## 📚 Resources
 
