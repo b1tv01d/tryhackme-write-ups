@@ -108,7 +108,7 @@ nc 10.10.135.18 1337
 ```
 The output that was given:
 
-```bash
+```
 This XOR encoded text has flag 1: 19097d111b7c205c041f0839442b1f39755301080c2f42590a210d49023e3f35495a1e3f397f1816
 What is the encryption key? 
 ```
@@ -116,11 +116,11 @@ It seems to be waiting for some sort of input. It's asking for an encryption key
 
 After testing some input, here is what I received:
 
-```bash
+```
 What is the encryption key? 1
 Close but no cigar
 ```
-```bash
+```
 What is the encryption key? 2
 No way you got it! Here is your flag THM{Try_Again} :)
 ```
@@ -150,7 +150,7 @@ After brute forcing the last digit in the key field, I was able to discover the 
 
 In order to retrieve the second flag, we would have to take our XOR key, which in my case would be `oxrtd`, and input that into the "What is the encryption key?" prompt. After doing so, we retrieved the second flag.
 
-```bash
+```
 What is the encryption key? oxrtd
 Congrats! That is the correct key! Here is flag 2: ..."
 ```
