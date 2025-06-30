@@ -4,7 +4,6 @@
 
 _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challenge._
 
----
 
 ## 📚 Table of Contents
 - [🧠 Overview](#-overview)
@@ -15,7 +14,6 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 - [🧠 Lessons Learned](#-lessons-learned)
 - [📚 Resources](#-resources)
 
----
 
 ## 🧠 Overview
 - **Category:** Reverse Engineering
@@ -23,7 +21,6 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 - **Date Completed:** 2025-06-29
 - **Tools Used:** `strings`, `grep`, `wine`, `file`
 
----
 
 ## 📡 Target Information
 
@@ -31,7 +28,6 @@ _A walkthrough of the [The Game](https://tryhackme.com/room/hfb1thegame) challen
 |---------|--------------|
 | Binary  | `Tetrix.exe` |
 
----
 
 ## 🛰️ Reconnaissance
 
@@ -48,8 +44,6 @@ Tetrix.exe: PE32+ executable (GUI) x86-64, for MS Windows
 
 The binary is a Windows-based 64-bit executable, likely written in C/C++ and possibly stripped.
 
----
-
 ### 🔎 Strings Analysis
 
 ```bash
@@ -58,13 +52,11 @@ strings Tetrix.exe | grep THM{
 
 This quickly revealed a potential flag-like string embedded directly in the binary. This indicates the flag is not dynamically generated or encoded — just statically stored.
 
----
 
 ### 🚫 Skipped Network/Directory Recon
 
 As this was a standalone reverse engineering challenge with no server or web component, tools like `gobuster` or `nmap` were not necessary.
 
----
 
 ## 🛠️ Exploitation
 
@@ -82,13 +74,11 @@ strings Tetrix.exe | grep THM{
 
 This implies the flag was likely embedded for a quick-win beginner-level intro to binary analysis.
 
----
 
 ## 🧨 Privilege Escalation
 
 Not applicable — this was a single-user binary analysis challenge, no privilege escalation was involved.
 
----
 
 ## 🧠 Lessons Learned
 
